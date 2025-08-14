@@ -42,3 +42,45 @@
   background-size: cover;
   background-position: center;
 }
+
+@utility service-one {
+  background-image: url('/src/assets/img/service_one.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@utility service-two {
+  background-image: url('/src/assets/img/service_two.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@utility service-three {
+  background-image: url('/src/assets/img/service_three.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@utility service-four {
+  background-image: url('/src/assets/img/service_four.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@utility service-five {
+  background-image: url('/src/assets/img/service_five.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@utility service-six {
+  background-image: url('/src/assets/img/service_six.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@utility service-seven {
+  background-image: url('/src/assets/img/service_seven.jpg');
+  background-size: cover;
+  background-position: center;
+}

@@ -40,7 +40,7 @@
         <div class="hidden flex-none lg:block">
           <ul class="menu menu-horizontal">
             <!-- Navbar menu content here -->
-            <li><a>Navbar Item 1</a></li>
+            <li><a href="#services">Servicios</a></li>
             <li><a>Navbar Item 2</a></li>
           </ul>
         </div>
