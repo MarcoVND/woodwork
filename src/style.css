@@ -1,2 +1,44 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+@plugin "daisyui/theme" {
+  name: "woodwork";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: #FFFFFF;
+  --color-base-200: oklch(97% 0 0);
+  --color-base-300: oklch(92% 0 0);
+  --color-base-content: oklch(20% 0 0);
+  --color-primary: #e0c04e;
+  --color-primary-content: oklch(25% 0.09 281.288);
+  --color-secondary: #7f6924;
+  --color-secondary-content: #fbfbf9;
+  --color-accent: oklch(80% 0.105 251.813);
+  --color-accent-content: oklch(28% 0.091 267.935);
+  --color-neutral: #262523;
+  --color-neutral-content: oklch(98% 0 0);
+  --color-info: oklch(78% 0.154 211.53);
+  --color-info-content: oklch(30% 0.056 229.695);
+  --color-success: oklch(84% 0.238 128.85);
+  --color-success-content: oklch(27% 0.072 132.109);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(27% 0.077 45.635);
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 2rem;
+  --radius-field: 2rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@utility hero-bg {
+  background-image: url('/src/assets/img/img_bg.jpg');
+  background-size: cover;
+  background-position: center;
+}

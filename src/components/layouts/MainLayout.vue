@@ -5,7 +5,17 @@
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
-      <div class="navbar bg-base-300 w-full">
+      <div class="navbar bg-base-200 w-full">
+        <div class="mx-2 flex-1 px-2">
+          <figure>
+            <img
+              src="../../assets/img/logo_resina_epoxi.jpg"
+              alt="logo-woodwork"
+              width="50"
+              height="50"
+            />
+          </figure>
+        </div>
         <div class="flex-none lg:hidden">
           <label
             for="my-drawer-3"
@@ -26,11 +36,6 @@
               ></path>
             </svg>
           </label>
-        </div>
-        <div class="mx-2 flex-1 px-2">
-            <figure>
-                <img src="../../assets/img/logo_resina_epoxi.jpg" alt="logo-woodwork">
-            </figure>
         </div>
         <div class="hidden flex-none lg:block">
           <ul class="menu menu-horizontal">
