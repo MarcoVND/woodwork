@@ -84,3 +84,9 @@
   background-size: cover;
   background-position: center;
 }
+
+@utility article-bg {
+  background-image: url('/src/assets/img/resina_8.jpg');
+  background-size: cover;
+  background-position: center;
+}
