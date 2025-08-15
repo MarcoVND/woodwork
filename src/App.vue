@@ -70,7 +70,7 @@ const { isMobile, isTablet, isDesktop } = useViewport();
           arte y resistencia.
         </p>
 
-        <div class="btn btn-primary" v-if="isDesktop()">Contáctanos</div>
+        <a href="https://wa.link/qx0dko" class="btn btn-primary" v-if="isDesktop()" target="_blank">Contáctanos</a>
       </div>
       <Carousell v-if="isMobile() || isTablet()" />
     </AboutUsLayout>
@@ -82,6 +82,13 @@ const { isMobile, isTablet, isDesktop } = useViewport();
       <Links />
 
       <SocialLinks />
+
+      <div class="flex items-center justify-center gap-2 flex-wrap w-1/3 mx-auto">
+        <p>Tel: 3333883057</p>
+        <p>Correo electrónico: resinaepoxiycarpinteria@gmail.com</p>
+        <p>Domicilio: Calle Porfirio Díaz 132, Las pintitas, Guadalajara</p>
+        <p>C.P. 45694</p>
+      </div>
     </FooterLayout>
   </MainLayout>
 </template>

@@ -3,7 +3,7 @@
 <template>
   <ul class="flex items-center justify-center gap-4">
     <li>
-      <a href="https://wa.link/ev7ko7" target="_blank" rel="noopener"
+      <a href="https://wa.link/qx0dko" target="_blank" rel="noopener"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

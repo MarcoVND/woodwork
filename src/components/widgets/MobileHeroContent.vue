@@ -13,7 +13,7 @@ import resin4Image from "../../assets/img/resina_4.jpg";
       espacios en ambientes únicos, funcionales y llenos de estilo.
     </p>
 
-    <div class="btn btn-primary">Contáctanos</div>
+    <a href="https://wa.link/qx0dko" class="btn btn-primary" target="_blank">Contáctanos</a href="https://wa.link/qx0dko">
 
     <Image :src="resin4Image" alt="servicio de muebles" />
   </div>

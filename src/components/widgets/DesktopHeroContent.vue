@@ -11,7 +11,7 @@
       resistencia de la resina con la calidez de la madera para transformar
       espacios en ambientes únicos, funcionales y llenos de estilo.
     </p>
-    <div class="btn btn-primary btn-lg">Contáctanos</div>
+    <a href="https://wa.link/qx0dko" class="btn btn-primary btn-lg" target="_blank">Contáctanos</a>
   </div>
 </template>
 
