@@ -41,6 +41,7 @@
         <div class="hidden flex-none lg:block">
           <ul class="menu menu-horizontal">
             <!-- Navbar menu content here -->
+            <li><a href="#home">Inicio</a></li>
             <li><a href="#services">Servicios</a></li>
             <li><a href="#about-us">Sobre Nosotros</a></li>
           </ul>
@@ -57,6 +58,7 @@
       ></label>
       <ul class="menu bg-base-200 min-h-full w-80 p-4">
         <!-- Sidebar content here -->
+        <li><a href="#home">Inicio</a></li>
         <li><a href="#services">Servicios</a></li>
         <li><a href="#about-us">Sobre Nosotros</a></li>
       </ul>
