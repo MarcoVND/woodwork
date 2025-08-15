@@ -90,3 +90,21 @@
   background-size: cover;
   background-position: center;
 }
+
+@utility about-us-first {
+  background-image: url('/src/assets/img/resina_6.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@utility about-us-second {
+  background-image: url('/src/assets/img/resina_7.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@utility about-us-third {
+  background-image: url('/src/assets/img/resina_9.jpg');
+  background-size: cover;
+  background-position: center;
+}

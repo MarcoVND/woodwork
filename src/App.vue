@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AboutUsLayout from "./components/layouts/AboutUsLayout.vue";
 import ArticleLayout from "./components/layouts/ArticleLayout.vue";
+import GalleryLayout from "./components/layouts/GalleryLayout.vue";
 import HeroLayout from "./components/layouts/HeroLayout.vue";
 import MainLayout from "./components/layouts/MainLayout.vue";
 import ServicesLayout from "./components/layouts/ServicesLayout.vue";
@@ -54,13 +55,18 @@ const { isMobile, isTablet, isDesktop } = useViewport();
     </ArticleLayout>
 
     <AboutUsLayout id="about-us">
-      <div class="flex flex-col items-center justify-center gap-5">
+
+      <GalleryLayout v-if="isDesktop()"/>
+
+      <div class="flex flex-col items-center justify-center gap-5 md:w-1/2 mx-auto">
         <h2 class="text-3xl font-bold text-center">Sobre Nosotros</h2>
         <p class="text-justify max-w-2xl">
           Somos un negocio creativo ofreciendo servicios y productos de calidad.
           Nos encantaría trabajar en tu hogar, dando nuestro toque de diseño,
           arte y resistencia.
         </p>
+
+        <div class="btn btn-primary" v-if="isDesktop()">Contáctanos</div>
       </div>
       <Carousell v-if="isMobile() || isTablet()"/>
     </AboutUsLayout>

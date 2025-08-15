@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="w-full flex flex-col items-center justify-center gap-5 p-10">
+  <section class="w-full flex flex-col md:flex-row gap-5 pt-10 px-20 h-[700px]">
     <slot />
   </section>
 </template>
