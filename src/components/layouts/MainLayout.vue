@@ -42,7 +42,7 @@
           <ul class="menu menu-horizontal">
             <!-- Navbar menu content here -->
             <li><a href="#services">Servicios</a></li>
-            <li><a>Navbar Item 2</a></li>
+            <li><a href="#about-us">Sobre Nosotros</a></li>
           </ul>
         </div>
       </div>
@@ -58,7 +58,7 @@
       <ul class="menu bg-base-200 min-h-full w-80 p-4">
         <!-- Sidebar content here -->
         <li><a href="#services">Servicios</a></li>
-        <li><a>Sidebar Item 2</a></li>
+        <li><a href="#about-us">Sobre Nosotros</a></li>
       </ul>
     </div>
   </div>
