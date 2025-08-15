@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import AboutUsLayout from "./components/layouts/AboutUsLayout.vue";
 import ArticleLayout from "./components/layouts/ArticleLayout.vue";
+import FooterLayout from "./components/layouts/FooterLayout.vue";
 import GalleryLayout from "./components/layouts/GalleryLayout.vue";
 import HeroLayout from "./components/layouts/HeroLayout.vue";
 import MainLayout from "./components/layouts/MainLayout.vue";
 import ServicesLayout from "./components/layouts/ServicesLayout.vue";
 import Carousell from "./components/ui/Carousell.vue";
+import Links from "./components/ui/Links.vue";
 import Service from "./components/ui/Service.vue";
+import SocialLinks from "./components/ui/SocialLinks.vue";
 import DesktopHeroContent from "./components/widgets/DesktopHeroContent.vue";
 import MobileHeroContent from "./components/widgets/MobileHeroContent.vue";
 import { useViewport } from "./composables/useViewportSize";
@@ -16,7 +19,7 @@ const { isMobile, isTablet, isDesktop } = useViewport();
 
 <template>
   <MainLayout>
-    <HeroLayout>
+    <HeroLayout id="home">
       <MobileHeroContent v-if="isMobile() || isTablet()" />
       <DesktopHeroContent v-else />
     </HeroLayout>
@@ -55,10 +58,11 @@ const { isMobile, isTablet, isDesktop } = useViewport();
     </ArticleLayout>
 
     <AboutUsLayout id="about-us">
+      <GalleryLayout v-if="isDesktop()" />
 
-      <GalleryLayout v-if="isDesktop()"/>
-
-      <div class="flex flex-col items-center justify-center gap-5 md:w-1/2 mx-auto">
+      <div
+        class="flex flex-col items-center justify-center gap-5 md:w-1/2 mx-auto"
+      >
         <h2 class="text-3xl font-bold text-center">Sobre Nosotros</h2>
         <p class="text-justify max-w-2xl">
           Somos un negocio creativo ofreciendo servicios y productos de calidad.
@@ -68,8 +72,17 @@ const { isMobile, isTablet, isDesktop } = useViewport();
 
         <div class="btn btn-primary" v-if="isDesktop()">Contáctanos</div>
       </div>
-      <Carousell v-if="isMobile() || isTablet()"/>
+      <Carousell v-if="isMobile() || isTablet()" />
     </AboutUsLayout>
+
+    <FooterLayout>
+      <h3 class="text-xl font-black sm:text-2xl">
+        Resina Epoxica y Carpintería
+      </h3>
+      <Links />
+
+      <SocialLinks />
+    </FooterLayout>
   </MainLayout>
 </template>
 
